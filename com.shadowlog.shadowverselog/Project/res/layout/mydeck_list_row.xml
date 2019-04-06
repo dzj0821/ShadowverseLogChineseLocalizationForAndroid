@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="horizontal" n1:background="@color/list_row_color" n1:paddingLeft="4.0dip" n1:paddingTop="4.0dip" n1:paddingRight="4.0dip" n1:paddingBottom="4.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/row_thumb_my" n1:layout_width="30.0dip" n1:layout_height="30.0dip" n1:layout_marginRight="4.0dip" />
+    <LinearLayout n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="30.0dip" n1:layout_weight="1.0">
+        <TextView n1:textSize="12.0sp" n1:textStyle="normal" n1:textColor="#ff202020" n1:gravity="center_vertical" n1:id="@id/row_name" n1:layout_width="wrap_content" n1:layout_height="fill_parent" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="right" n1:layout_gravity="right" n1:orientation="horizontal" n1:padding="0.0dip" n1:layout_width="178.0dip" n1:layout_height="fill_parent">
+        <Button n1:textSize="11.0sp" n1:textColor="#ffffffff" n1:id="@id/row_button_label" n1:background="@color/button_mydeck_label_bg_1" n1:layout_width="54.0dip" n1:layout_height="fill_parent" n1:layout_marginLeft="4.0dip" n1:layout_marginTop="2.0dip" n1:layout_marginRight="4.0dip" n1:layout_marginBottom="2.0dip" n1:text="調整メモ" />
+        <Button n1:textSize="11.0sp" n1:textColor="#ffffffff" n1:id="@id/row_button_public" n1:background="@color/button_mydeck_null_bg_1" n1:layout_width="34.0dip" n1:layout_height="fill_parent" n1:layout_marginTop="2.0dip" n1:layout_marginRight="4.0dip" n1:layout_marginBottom="2.0dip" n1:text="公開" />
+        <Button n1:textSize="11.0sp" n1:textColor="#ffffffff" n1:id="@id/row_button_struct" n1:background="@color/button_mydeck_null_bg_1" n1:layout_width="34.0dip" n1:layout_height="fill_parent" n1:layout_marginTop="2.0dip" n1:layout_marginRight="4.0dip" n1:layout_marginBottom="2.0dip" n1:text="構築" />
+        <Button n1:textSize="11.0sp" n1:textColor="#ffffffff" n1:id="@id/row_button_analyze" n1:background="@color/button_mydeck_analyze_bg_1" n1:layout_width="34.0dip" n1:layout_height="fill_parent" n1:layout_marginTop="2.0dip" n1:layout_marginRight="2.0dip" n1:layout_marginBottom="2.0dip" n1:text="解析" />
+    </LinearLayout>
+</LinearLayout>

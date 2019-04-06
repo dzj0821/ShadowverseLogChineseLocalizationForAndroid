@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item n1:state_checked="true"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <layer-list>
+            <item>
+                <shape>
+                    <solid n1:color="#ffff0000" />
+                </shape>
+            </item>
+            <item>
+                <inset n1:drawable="@drawable/l_5_100" n1:insetLeft="2.0dip" n1:insetRight="2.0dip" n1:insetTop="2.0dip" n1:insetBottom="2.0dip" />
+            </item>
+        </layer-list>
+    </item>
+    <item n2:state_checked="false"
+      xmlns:n2="http://schemas.android.com/apk/res/android">
+        <inset n2:drawable="@drawable/l_5_100_g" n2:insetLeft="2.0dip" n2:insetRight="2.0dip" n2:insetTop="2.0dip" n2:insetBottom="2.0dip" />
+    </item>
+</selector>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow n1:background="@color/border" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:id="@id/rowlayout1" n1:background="@color/white" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+        <TextView n1:textSize="11.0dip" n1:textColor="@color/summary" n1:id="@id/rowtext1" n1:paddingLeft="6.0dip" n1:paddingTop="6.0dip" n1:paddingRight="6.0dip" n1:paddingBottom="6.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="---" />
+    </LinearLayout>
+    <TextView n1:textSize="11.0dip" n1:textColor="@color/base_blue" n1:gravity="center" n1:id="@id/rowtext3" n1:background="@color/white" n1:paddingLeft="5.0dip" n1:paddingTop="3.0dip" n1:paddingRight="5.0dip" n1:paddingBottom="3.0dip" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginLeft="1.0dip" n1:text="0" />
+    <TextView n1:textSize="11.0dip" n1:textColor="@color/base_pink" n1:gravity="center" n1:id="@id/rowtext4" n1:background="@color/white" n1:paddingLeft="5.0dip" n1:paddingTop="3.0dip" n1:paddingRight="5.0dip" n1:paddingBottom="3.0dip" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginLeft="1.0dip" n1:text="0" />
+    <TextView n1:textSize="11.0dip" n1:textColor="@color/base_pink" n1:gravity="center" n1:id="@id/rowtext5" n1:background="@color/white" n1:paddingLeft="5.0dip" n1:paddingTop="3.0dip" n1:paddingRight="5.0dip" n1:paddingBottom="3.0dip" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginLeft="1.0dip" n1:text="0" />
+</TableRow>

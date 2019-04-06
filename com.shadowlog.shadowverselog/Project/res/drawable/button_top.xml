@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item n1:state_pressed="true"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <shape n1:shape="rectangle">
+            <gradient n1:startColor="@color/button_top_on_start" n1:endColor="@color/button_top_on_end" n1:angle="270.0" />
+            <stroke n1:width="1.0dip" n1:color="@color/button_top_on_stroke" />
+            <corners n1:radius="4.0dip" />
+        </shape>
+    </item>
+    <item n2:state_pressed="false"
+      xmlns:n2="http://schemas.android.com/apk/res/android">
+        <shape n2:shape="rectangle">
+            <gradient n2:startColor="@color/button_top_off_start" n2:endColor="@color/button_top_off_end" n2:angle="270.0" />
+            <stroke n2:width="1.0dip" n2:color="@color/button_top_off_stroke" />
+            <corners n2:radius="4.0dip" />
+        </shape>
+    </item>
+</selector>

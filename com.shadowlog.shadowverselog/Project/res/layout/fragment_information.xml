@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/blank_wrap" n1:padding="8.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:id="@id/ScrollView" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:fillViewport="true">
+        <LinearLayout n1:orientation="vertical" n1:background="@color/white" n1:padding="8.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:textSize="16.0sp" n1:textColor="#ff303030" n1:id="@id/sub1" n1:background="#fff0f0f0" n1:padding="6.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="6.0dip" n1:text=" このアプリについて" />
+            <TextView n1:textSize="12.0sp" n1:textColor="#ff505050" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="シャドウバースの戦績を管理するWEBサービス『Shadowverse Log』( https://shadowlog.com ) です。\nあなたの日々の戦績をデッキ情報や対戦相手の情報も含めてWEBサーバー＆スマホ端末に記録しておく事ができます。\nこのサービスはすべて無料で提供しており、課金・利用費用等は一切ありません。" n1:lineSpacingExtra="2.0sp" />
+            <View n1:layout_width="fill_parent" n1:layout_height="1.0dip" n1:layout_marginBottom="16.0dip" />
+            <TextView n1:textSize="16.0sp" n1:textColor="#ff303030" n1:id="@id/sub2" n1:background="#fff0f0f0" n1:padding="6.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="6.0dip" n1:text=" アプリにご満足頂けたら.." />
+            <TextView n1:textSize="12.0sp" n1:textColor="#ff505050" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="皆様の応援の声が何より開発の力になります。\nぜひ『アプリの評価レビュー』『TwitterやLINEでの紹介』にご協力下さい。" n1:lineSpacingExtra="2.0sp" />
+            <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="8.0dip">
+                <Button n1:textSize="12.0sp" n1:textColor="#ffffffff" n1:id="@id/button_info_review" n1:background="@color/button_mydeck_struct_bg_1" n1:paddingLeft="10.0dip" n1:paddingRight="10.0dip" n1:layout_width="wrap_content" n1:layout_height="30.0dip" n1:layout_marginRight="6.0dip" n1:text="アプリレビューを書く" />
+                <Button n1:textSize="12.0sp" n1:textColor="#ffffffff" n1:id="@id/button_info_twitter" n1:background="@color/button_mydeck_struct_bg_1" n1:paddingLeft="10.0dip" n1:paddingRight="10.0dip" n1:layout_width="wrap_content" n1:layout_height="30.0dip" n1:text="友達にアプリを教える" />
+            </LinearLayout>
+            <View n1:layout_width="fill_parent" n1:layout_height="1.0dip" n1:layout_marginBottom="16.0dip" />
+            <TextView n1:textSize="16.0sp" n1:textColor="#ff303030" n1:id="@id/sub3" n1:background="#fff0f0f0" n1:padding="6.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="6.0dip" n1:text=" もし不具合に遭遇されたら.." />
+            <TextView n1:textSize="12.0sp" n1:textColor="#ff505050" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="ご不便をおかけして申し訳ありません。\nお手数おかけしますが、お問合せより不具合の詳細をご報告下さい。すぐに調査・改善を行いますので、ご協力お願いいたします。(運営は全て1人で行っていますので、対応が遅くなる場合がありますがご了承下さい。)" n1:lineSpacingExtra="2.0sp" />
+            <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="8.0dip">
+                <Button n1:textSize="12.0sp" n1:textColor="#ffffffff" n1:id="@id/button_info_contact" n1:background="@color/button_mydeck_struct_bg_1" n1:paddingLeft="10.0dip" n1:paddingRight="10.0dip" n1:layout_width="wrap_content" n1:layout_height="30.0dip" n1:layout_marginRight="6.0dip" n1:text="不具合のお問合せ" />
+            </LinearLayout>
+            <View n1:layout_width="fill_parent" n1:layout_height="1.0dip" n1:layout_marginBottom="16.0dip" />
+            <TextView n1:textSize="16.0sp" n1:textColor="#ff303030" n1:id="@id/sub4" n1:background="#fff0f0f0" n1:padding="6.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="6.0dip" n1:text=" クレジット" />
+            <TextView n1:textSize="12.0sp" n1:textColor="#ff505050" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="WEBサイト : https://shadowlog.com/\n運営Twitter : @shadow_log\n運営E-mail : shadowverselog@gmail.com\nイラスト協力 : ネジキリオ(@nejikirio)" n1:lineSpacingExtra="2.0sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

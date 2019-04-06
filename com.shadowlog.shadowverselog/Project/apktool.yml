@@ -1,0 +1,30 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: com.shadowlog.shadowverselog.apk
+compressionType: false
+doNotCompress:
+- arsc
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '16'
+  targetSdkVersion: '25'
+sharedLibrary: false
+unknownFiles:
+  build-data.properties: '8'
+  publicsuffixes.gz: '0'
+  jsr305_annotations/Jsr305_annotations.gwt.xml: '8'
+  rx/android/view/AutoValue_OnCheckedChangeEvent.java: '8'
+  rx/android/view/AutoValue_OnClickEvent.java: '8'
+  rx/android/widget/AutoValue_OnItemClickEvent.java: '8'
+  rx/android/widget/AutoValue_OnListViewScrollEvent.java: '8'
+  rx/android/widget/AutoValue_OnTextChangeEvent.java: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.3.0
+versionInfo:
+  versionCode: '16'
+  versionName: '1.22'

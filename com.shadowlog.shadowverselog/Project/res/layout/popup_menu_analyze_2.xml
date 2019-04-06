@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@drawable/popup_analyze_background" n1:layout_width="wrap_content" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:padding="8.0dip" n1:layout_width="280.0dip" n1:layout_height="wrap_content">
+        <TextView n1:textStyle="bold" n1:textColor="@color/dialog_color" n1:padding="8.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="解析の期間を指定" />
+        <View n1:background="@color/dialog_color" n1:layout_width="fill_parent" n1:layout_height="1.0dip" n1:layout_marginBottom="8.0dip" />
+        <RadioGroup n1:id="@id/radio_group_prieod" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="8.0dip" n1:layout_marginRight="8.0dip">
+            <RadioButton n1:textColor="@color/white" n1:id="@id/radio_default" n1:background="@drawable/radio_flat_button" n1:paddingLeft="12.0dip" n1:paddingTop="8.0dip" n1:paddingBottom="8.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:text="新パック実装以降" />
+            <RadioButton n1:textColor="@color/white" n1:id="@id/radio_all" n1:background="@drawable/radio_flat_button" n1:paddingLeft="12.0dip" n1:paddingTop="8.0dip" n1:paddingBottom="8.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:text="全ての期間" />
+            <RadioButton n1:textColor="@color/white" n1:id="@id/radio_custom" n1:background="@drawable/radio_flat_button" n1:paddingLeft="12.0dip" n1:paddingTop="8.0dip" n1:paddingBottom="8.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:text="期間を指定" />
+        </RadioGroup>
+        <LinearLayout n1:id="@id/custom_period_layout" n1:background="#ff1297e0" n1:padding="1.0dip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="8.0dip" n1:layout_marginTop="10.0dip" n1:layout_marginRight="8.0dip">
+            <LinearLayout n1:orientation="vertical" n1:background="#ff292929" n1:paddingLeft="6.0dip" n1:paddingTop="6.0dip" n1:paddingRight="6.0dip" n1:paddingBottom="6.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:textSize="12.0sp" n1:textColor="@color/white" n1:gravity="center_vertical" n1:layout_width="0.0dip" n1:layout_height="20.0dip" n1:layout_marginRight="8.0dip" n1:text="ここから" n1:layout_weight="1.0" />
+                    <TextView n1:textSize="12.0sp" n1:textColor="#ffe0e0e0" n1:id="@id/picker1" n1:background="#ff494949" n1:paddingLeft="6.0sp" n1:layout_width="90.0dip" n1:layout_height="20.0dip" n1:layout_marginRight="6.0dip" n1:text="..." />
+                    <TextView n1:textSize="12.0sp" n1:textColor="#ffe0e0e0" n1:id="@id/picker2" n1:background="#ff494949" n1:paddingLeft="6.0sp" n1:layout_width="70.0dip" n1:layout_height="20.0dip" n1:text="..." />
+                </LinearLayout>
+                <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="6.0dip">
+                    <TextView n1:textSize="12.0sp" n1:textColor="@color/white" n1:gravity="center_vertical" n1:layout_width="0.0dip" n1:layout_height="20.0dip" n1:layout_marginRight="8.0dip" n1:text="ここまで" n1:layout_weight="1.0" />
+                    <TextView n1:textSize="12.0sp" n1:textColor="#ffe0e0e0" n1:id="@id/picker3" n1:background="#ff494949" n1:paddingLeft="6.0sp" n1:layout_width="90.0dip" n1:layout_height="20.0dip" n1:layout_marginRight="6.0dip" n1:text="..." />
+                    <TextView n1:textSize="12.0sp" n1:textColor="#ffe0e0e0" n1:id="@id/picker4" n1:background="#ff494949" n1:paddingLeft="6.0sp" n1:layout_width="70.0dip" n1:layout_height="20.0dip" n1:text="..." />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View n1:layout_width="fill_parent" n1:layout_height="4.0dip" />
+        <TextView n1:textStyle="bold" n1:textColor="@color/dialog_color" n1:padding="8.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="対戦形式で絞り込む" />
+        <View n1:background="@color/dialog_color" n1:layout_width="fill_parent" n1:layout_height="1.0dip" n1:layout_marginBottom="8.0dip" />
+        <TableLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="8.0dip" n1:layout_marginRight="8.0dip">
+            <TableRow n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <CheckBox n1:textSize="12.0sp" n1:textColor="@color/white" n1:gravity="center" n1:id="@id/chk_format_rank" n1:background="@drawable/check_flat_button" n1:paddingTop="4.0dip" n1:paddingBottom="4.0dip" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_margin="4.0dip" n1:button="@null" n1:text="ランクマッチ全般" n1:layout_weight="2.0" />
+            </TableRow>
+            <TableRow n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <TextView n1:textSize="12.0sp" n1:textColor="#ffffffff" n1:text="▼ アンリミテッド" />
+            </TableRow>
+            <TableRow n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <CheckBox n1:textSize="12.0sp" n1:textColor="@color/white" n1:gravity="center" n1:id="@id/chk_format_m" n1:background="@drawable/check_flat_button" n1:paddingTop="4.0dip" n1:paddingBottom="4.0dip" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="4.0dip" n1:layout_marginTop="4.0dip" n1:layout_marginRight="4.0dip" n1:layout_marginBottom="4.0dip" n1:button="@null" n1:text="Master" n1:layout_weight="1.0" />
+                <CheckBox n1:textSize="12.0sp" n1:textColor="@color/white" n1:gravity="center" n1:id="@id/chk_format_aa" n1:background="@drawable/check_flat_button" n1:paddingTop="4.0dip" n1:paddingBottom="4.0dip" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_margin="4.0dip" n1:button="@null" n1:text="AAランク" n1:layout_weight="1.0" />
+                <CheckBox n1:textSize="12.0sp" n1:textColor="@color/white" n1:gravity="center" n1:id="@id/chk_format_a" n1:background="@drawable/check_flat_button" n1:paddingTop="4.0dip" n1:paddingBottom="4.0dip" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_margin="4.0dip" n1:button="@null" n1:text="Aランク" n1:layout_weight="1.0" />
+            </TableRow>
+            <TableRow n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <CheckBox n1:textSize="12.0sp" n1:textColor="@color/white" n1:gravity="center" n1:id="@id/chk_format_b" n1:background="@drawable/check_flat_button" n1:paddingTop="4.0dip" n1:paddingBottom="4.0dip" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_margin="4.0dip" n1:button="@null" n1:text="Bランク" n1:layout_weight="1.0" />
+                <CheckBox n1:textSize="12.0sp" n1:textColor="@color/white" n1:gravity="center" n1:id="@id/chk_format_c" n1:background="@drawable/check_flat_button" n1:paddingTop="4.0dip" n1:paddingBottom="4.0dip" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_margin="4.0dip" n1:button="@null" n1:text="Cランク" n1:layout_weight="1.0" />
+                <CheckBox n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_margin="4.0dip" n1:button="@null" n1:layout_weight="1.0" />
+            </TableRow>
+            <TableRow n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <TextView n1:textSize="12.0sp" n1:textColor="#ffffffff" n1:text="▼ ローテーション" />
+            </TableRow>
+            <TableRow n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <CheckBox n1:textSize="12.0sp" n1:textColor="@color/white" n1:gravity="center" n1:id="@id/chk_format_m_r" n1:background="@drawable/check_flat_button" n1:paddingTop="4.0dip" n1:paddingBottom="4.0dip" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="4.0dip" n1:layout_marginTop="4.0dip" n1:layout_marginRight="4.0dip" n1:layout_marginBottom="4.0dip" n1:button="@null" n1:text="Master" n1:layout_weight="1.0" />
+                <CheckBox n1:textSize="12.0sp" n1:textColor="@color/white" n1:gravity="center" n1:id="@id/chk_format_aa_r" n1:background="@drawable/check_flat_button" n1:paddingTop="4.0dip" n1:paddingBottom="4.0dip" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_margin="4.0dip" n1:button="@null" n1:text="AAランク" n1:layout_weight="1.0" />
+                <CheckBox n1:textSize="12.0sp" n1:textColor="@color/white" n1:gravity="center" n1:id="@id/chk_format_a_r" n1:background="@drawable/check_flat_button" n1:paddingTop="4.0dip" n1:paddingBottom="4.0dip" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_margin="4.0dip" n1:button="@null" n1:text="Aランク" n1:layout_weight="1.0" />
+            </TableRow>
+            <TableRow n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <CheckBox n1:textSize="12.0sp" n1:textColor="@color/white" n1:gravity="center" n1:id="@id/chk_format_b_r" n1:background="@drawable/check_flat_button" n1:paddingTop="4.0dip" n1:paddingBottom="4.0dip" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_margin="4.0dip" n1:button="@null" n1:text="Bランク" n1:layout_weight="1.0" />
+                <CheckBox n1:textSize="12.0sp" n1:textColor="@color/white" n1:gravity="center" n1:id="@id/chk_format_c_r" n1:background="@drawable/check_flat_button" n1:paddingTop="4.0dip" n1:paddingBottom="4.0dip" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_margin="4.0dip" n1:button="@null" n1:text="Cランク" n1:layout_weight="1.0" />
+                <CheckBox n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_margin="4.0dip" n1:button="@null" n1:layout_weight="1.0" />
+            </TableRow>
+            <TableRow n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <CheckBox n1:textSize="12.0sp" n1:textColor="@color/white" n1:gravity="center" n1:id="@id/chk_format_f" n1:background="@drawable/check_flat_button" n1:paddingTop="4.0dip" n1:paddingBottom="4.0dip" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_margin="4.0dip" n1:button="@null" n1:text="フリー" n1:layout_weight="1.0" />
+                <CheckBox n1:textSize="12.0sp" n1:textColor="@color/white" n1:gravity="center" n1:id="@id/chk_format_p" n1:background="@drawable/check_flat_button" n1:paddingTop="4.0dip" n1:paddingBottom="4.0dip" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_margin="4.0dip" n1:button="@null" n1:text="2Pick" n1:layout_weight="1.0" />
+                <CheckBox n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_margin="4.0dip" n1:button="@null" n1:layout_weight="1.0" />
+            </TableRow>
+        </TableLayout>
+        <View n1:background="#ff505050" n1:layout_width="fill_parent" n1:layout_height="1.0dip" n1:layout_marginLeft="2.0dip" n1:layout_marginTop="8.0dip" n1:layout_marginRight="2.0dip" n1:layout_marginBottom="8.0dip" />
+        <Button n1:textColor="@color/white" n1:id="@id/dialog_commit" n1:background="@drawable/dialog_flat_button" n1:paddingTop="2.0dip" n1:paddingBottom="2.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="適用する" />
+    </LinearLayout>
+</LinearLayout>

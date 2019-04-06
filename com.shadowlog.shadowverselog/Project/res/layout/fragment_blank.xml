@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/blank_wrap" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textSize="12.0sp" n1:typeface="sans" n1:textStyle="normal" n1:textColor="#ffc0c0c0" n1:gravity="left" n1:id="@id/title" n1:padding="0.0sp" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="9.0sp" n1:layout_marginTop="2.0sp" n1:layout_marginRight="9.0sp" n1:layout_marginBottom="4.0sp" n1:text="BlankFragment" />
+    <Button n1:id="@id/open_child" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="OpenChild" />
+</LinearLayout>

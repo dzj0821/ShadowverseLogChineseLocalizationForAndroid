@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:gravity="center_horizontal" n1:orientation="horizontal" n1:background="@drawable/popup_analyze_background" n1:padding="8.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <Button n1:textSize="12.0sp" n1:textStyle="bold" n1:textColor="@color/white" n1:id="@id/popwin_btn_1" n1:background="@drawable/dialog_flat_button" n1:paddingTop="2.0dip" n1:paddingBottom="2.0dip" n1:layout_width="90.0dip" n1:layout_height="35.0dip" n1:layout_marginRight="8.0dip" n1:text="@string/add_button_record" />
+    <Button n1:textSize="12.0sp" n1:textStyle="bold" n1:textColor="@color/white" n1:id="@id/popwin_btn_2" n1:background="@drawable/dialog_flat_button" n1:paddingTop="2.0dip" n1:paddingBottom="2.0dip" n1:layout_width="90.0dip" n1:layout_height="35.0dip" n1:layout_marginRight="8.0dip" n1:text="@string/add_button_deck" />
+    <Button n1:textSize="12.0sp" n1:textStyle="bold" n1:textColor="@color/white" n1:id="@id/popwin_btn_3" n1:background="@drawable/dialog_flat_button" n1:paddingTop="2.0dip" n1:paddingBottom="2.0dip" n1:layout_width="90.0dip" n1:layout_height="35.0dip" n1:text="@string/add_button_2pick" />
+</LinearLayout>

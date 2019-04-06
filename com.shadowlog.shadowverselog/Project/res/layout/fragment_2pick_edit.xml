@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/blank_wrap" n1:padding="12.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:gravity="top" n1:orientation="vertical" n1:background="#ffffffff" n1:paddingLeft="4.0sp" n1:paddingTop="8.0sp" n1:paddingRight="4.0sp" n1:paddingBottom="8.0sp" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <TextView n1:textSize="12.0sp" n1:textStyle="bold" n1:textColor="#ffffffff" n1:gravity="center" n1:id="@id/edit_title" n1:background="@drawable/child_fragment_title" n1:paddingTop="6.0dip" n1:paddingBottom="6.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="2.0dip" n1:layout_marginRight="2.0dip" n1:layout_marginBottom="8.0dip" n1:text="2Pick戦績を新しく記録する" />
+            <TextView n1:textColor="#ff303030" n1:id="@id/sub_my" n1:background="@drawable/child_fragment_subject" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text=" あなたのリーダー＆デッキ" style="@style/ChildFragmentSubject" />
+            <RadioGroup n1:orientation="horizontal" n1:id="@id/radiogroup_myleader" n1:paddingLeft="2.0dip" n1:paddingTop="2.0dip" n1:paddingRight="2.0dip" n1:paddingBottom="2.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <com.example.hide.newproject.lib.SquareRadioButton n1:id="@id/rg_myleader_1" n1:background="@drawable/leader_button_select_1" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:layout_weight="1.0" />
+                <com.example.hide.newproject.lib.SquareRadioButton n1:id="@id/rg_myleader_2" n1:background="@drawable/leader_button_select_2" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:layout_weight="1.0" />
+                <com.example.hide.newproject.lib.SquareRadioButton n1:id="@id/rg_myleader_3" n1:background="@drawable/leader_button_select_3" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:layout_weight="1.0" />
+                <com.example.hide.newproject.lib.SquareRadioButton n1:id="@id/rg_myleader_4" n1:background="@drawable/leader_button_select_4" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:layout_weight="1.0" />
+                <com.example.hide.newproject.lib.SquareRadioButton n1:id="@id/rg_myleader_5" n1:background="@drawable/leader_button_select_5" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:layout_weight="1.0" />
+                <com.example.hide.newproject.lib.SquareRadioButton n1:id="@id/rg_myleader_6" n1:background="@drawable/leader_button_select_6" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:layout_weight="1.0" />
+                <com.example.hide.newproject.lib.SquareRadioButton n1:id="@id/rg_myleader_7" n1:background="@drawable/leader_button_select_7" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:layout_weight="1.0" />
+            </RadioGroup>
+            <View n1:layout_width="wrap_content" n1:layout_height="12.0dip" />
+            <TextView n1:textColor="#ff303030" n1:id="@id/sub_rating" n1:background="@drawable/child_fragment_subject" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="6.0dip" n1:text=" 2Pickの勝利数" style="@style/ChildFragmentSubject" />
+            <LinearLayout n1:gravity="center_horizontal" n1:orientation="horizontal" n1:background="#ffc0c0c0" n1:padding="1.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_margin="2.0dip">
+                <LinearLayout n1:gravity="center_horizontal" n1:orientation="horizontal" n1:background="#fff0f0f0" n1:padding="6.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <Button n1:textSize="16.0sp" n1:textColor="#ffc0c0c0" n1:id="@id/rating_reset_button" n1:background="@null" n1:layout_width="18.0dip" n1:layout_height="18.0dip" n1:text="★" />
+                    <RatingBar n1:theme="@style/Theme.AppCompat" n1:id="@id/ratingBar" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:numStars="5" n1:rating="0.0" n1:stepSize="1.0" n1:isIndicator="false" style="?android:ratingBarStyleIndicator" />
+                    <View n1:layout_width="18.0dip" n1:layout_height="18.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <View n1:layout_width="wrap_content" n1:layout_height="12.0dip" />
+            <TextView n1:textColor="#ff303030" n1:id="@id/sub_deckurl" n1:background="@drawable/child_fragment_subject" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="6.0dip" n1:text=" デッキコードを入力してデッキ情報を保存" style="@style/ChildFragmentSubject" />
+            <LinearLayout n1:gravity="left" n1:orientation="horizontal" n1:paddingLeft="4.0dip" n1:paddingRight="4.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <EditText n1:id="@id/edit_deckcode" n1:background="@drawable/edit_text_back" n1:layout_width="50.0dip" n1:layout_height="wrap_content" n1:layout_marginTop="2.0dip" n1:layout_marginRight="4.0dip" n1:maxLength="4" />
+                <Button n1:textSize="10.0sp" n1:textColor="#ffffffff" n1:gravity="center" n1:id="@id/button_deckcde" n1:background="#ffe91e63" n1:paddingLeft="2.0dip" n1:paddingRight="2.0dip" n1:layout_width="50.0dip" n1:layout_height="26.0dip" n1:layout_marginRight="12.0dip" n1:text="入力" n1:maxLines="1" />
+                <TextView n1:textSize="10.0sp" n1:textColor="#ff707070" n1:id="@id/message_deckcode" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:text="デッキコードを記入した後に「入力」ボタンを押してください。" />
+                <TextView n1:textSize="12.0sp" n1:textColor="#ffff3333" n1:id="@id/message_deckcode_true" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:text="デッキの取得に成功しました。" />
+                <TextView n1:textSize="12.0sp" n1:textColor="#ff0000ff" n1:id="@id/message_deckcode_false" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:text="デッキコードが不正です。" />
+            </LinearLayout>
+            <View n1:layout_width="wrap_content" n1:layout_height="12.0dip" />
+            <View n1:layout_width="wrap_content" n1:layout_height="12.0dip" />
+            <TextView n1:textColor="#ff303030" n1:id="@id/sub_memo" n1:background="@drawable/child_fragment_subject" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="6.0dip" n1:text=" 対戦のメモ" style="@style/ChildFragmentSubject" />
+            <EditText n1:id="@id/editText" n1:background="@drawable/edit_text_back" n1:padding="4.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="4.0dip" n1:layout_marginRight="4.0dip" n1:minLines="1" n1:maxLength="200" n1:inputType="textMultiLine" />
+            <View n1:layout_width="wrap_content" n1:layout_height="4.0dip" />
+            <TextView n1:textSize="14.0sp" n1:textColor="#ffff3333" n1:id="@id/alert_message" n1:paddingLeft="4.0dip" n1:paddingRight="4.0dip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="16.0dip" n1:layout_marginBottom="4.0dip" n1:text="" />
+            <LinearLayout n1:orientation="horizontal" n1:paddingLeft="4.0dip" n1:paddingTop="4.0dip" n1:paddingRight="4.0dip" n1:layout_width="fill_parent" n1:layout_height="40.0dip">
+                <Button n1:textSize="16.0sp" n1:textStyle="bold" n1:textColor="#ffffffff" n1:id="@id/commit_button" n1:background="@drawable/button_commit" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="記録する" n1:layout_weight="1.0" />
+            </LinearLayout>
+            <Button n1:textSize="12.0sp" n1:textStyle="bold" n1:textColor="#ffe00000" n1:gravity="center" n1:layout_gravity="center_horizontal" n1:id="@id/delete_button" n1:background="@null" n1:padding="4.0dip" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="28.0dip" n1:layout_marginLeft="4.0dip" n1:layout_marginTop="8.0dip" n1:layout_marginRight="4.0dip" n1:text=" この戦績を削除する" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

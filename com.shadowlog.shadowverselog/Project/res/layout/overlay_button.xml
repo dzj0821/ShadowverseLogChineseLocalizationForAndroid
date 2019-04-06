@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:orientation="vertical" n1:id="@id/layout_button" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <Button n1:textSize="12.0sp" n1:textStyle="bold" n1:textColor="@color/white" n1:id="@id/overlay_button" n1:background="@drawable/overlay_switch" n1:layout_width="wrap_content" n1:layout_height="30.0dip" n1:text="シャドログ" />
+        </LinearLayout>
+        <LinearLayout n1:orientation="vertical" n1:id="@id/layout_window" n1:padding="16.0sp" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <LinearLayout n1:orientation="vertical" n1:background="#cc000000" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                <LinearLayout n1:orientation="vertical" n1:id="@id/layout_record" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+                    <ScrollView n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+                        <LinearLayout n1:orientation="vertical" n1:id="@id/wrap_main" n1:paddingLeft="6.0dip" n1:paddingTop="4.0dip" n1:paddingRight="6.0dip" n1:paddingBottom="4.0dip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                            <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                                <TextView n1:textSize="12.0sp" n1:textStyle="bold" n1:textColor="#ffc0c0c0" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="6.0dip" n1:layout_marginTop="6.0dip" n1:layout_marginBottom="0.0dip" n1:text="あなたのリーダー＆デッキを選択" />
+                                <RadioGroup n1:orientation="horizontal" n1:id="@id/radio_myleader" n1:padding="6.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                                    <RadioButton n1:textSize="12.0sp" n1:textColor="#ffc0c0c0" n1:gravity="center" n1:id="@id/r_my1" n1:background="@drawable/overlay_radio" n1:paddingTop="4.0dip" n1:paddingBottom="4.0dip" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_marginRight="6.0dip" n1:button="@null" n1:text="エルフ" n1:layout_weight="1.0" />
+                                    <RadioButton n1:textSize="12.0sp" n1:textColor="#ffc0c0c0" n1:gravity="center" n1:id="@id/r_my2" n1:background="@drawable/overlay_radio" n1:paddingTop="4.0dip" n1:paddingBottom="4.0dip" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_marginRight="6.0dip" n1:button="@null" n1:text="ロイヤル" n1:layout_weight="1.0" />
+                                    <RadioButton n1:textSize="12.0sp" n1:textColor="#ffc0c0c0" n1:gravity="center" n1:id="@id/r_my3" n1:background="@drawable/overlay_radio" n1:paddingTop="4.0dip" n1:paddingBottom="4.0dip" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_marginRight="6.0dip" n1:button="@null" n1:text="ドラゴン" n1:layout_weight="1.0" />
+                                    <RadioButton n1:textSize="12.0sp" n1:textColor="#ffc0c0c0" n1:gravity="center" n1:id="@id/r_my4" n1:background="@drawable/overlay_radio" n1:paddingTop="4.0dip" n1:paddingBottom="4.0dip" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_marginRight="6.0dip" n1:button="@null" n1:text="ネクロ" n1:layout_weight="1.0" />
+                                    <RadioButton n1:textSize="12.0sp" n1:textColor="#ffc0c0c0" n1:gravity="center" n1:id="@id/r_my5" n1:background="@drawable/overlay_radio" n1:paddingTop="4.0dip" n1:paddingBottom="4.0dip" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_marginRight="6.0dip" n1:button="@null" n1:text="ウィッチ" n1:layout_weight="1.0" />
+                                    <RadioButton n1:textSize="12.0sp" n1:textColor="#ffc0c0c0" n1:gravity="center" n1:id="@id/r_my6" n1:background="@drawable/overlay_radio" n1:paddingTop="4.0dip" n1:paddingBottom="4.0dip" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_marginRight="6.0dip" n1:button="@null" n1:text="ヴァンパイア" n1:layout_weight="1.0" />
+                                    <RadioButton n1:textSize="12.0sp" n1:textColor="#ffc0c0c0" n1:gravity="center" n1:id="@id/r_my7" n1:background="@drawable/overlay_radio" n1:paddingTop="4.0dip" n1:paddingBottom="4.0dip" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:button="@null" n1:text="ビショップ" n1:layout_weight="1.0" />
+                                    <RadioButton n1:textSize="12.0sp" n1:textColor="#ffc0c0c0" n1:gravity="center" n1:id="@id/r_my8" n1:background="@drawable/overlay_radio" n1:paddingTop="4.0dip" n1:paddingBottom="4.0dip" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:button="@null" n1:text="ネメシス" n1:layout_weight="1.0" />
+                                </RadioGroup>
+                                <Spinner n1:textColor="#ffc0c0c0" n1:id="@id/spinner_mydeck" n1:background="@drawable/overlay_spinner" n1:layout_width="300.0dip" n1:layout_height="26.0dip" n1:layout_marginLeft="6.0dip" />
+                            </LinearLayout>
+                            <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                                <TextView n1:textSize="12.0sp" n1:textStyle="bold" n1:textColor="#ffc0c0c0" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="6.0dip" n1:layout_marginTop="6.0dip" n1:layout_marginBottom="0.0dip" n1:text="対戦相手のリーダー＆デッキを選択" />
+                                <RadioGroup n1:orientation="horizontal" n1:id="@id/radio_vsleader" n1:padding="6.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                                    <RadioButton n1:textSize="12.0sp" n1:textColor="#ffc0c0c0" n1:gravity="center" n1:id="@id/r_vs1" n1:background="@drawable/overlay_radio" n1:paddingTop="4.0dip" n1:paddingBottom="4.0dip" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_marginRight="6.0dip" n1:button="@null" n1:text="エルフ" n1:layout_weight="1.0" />
+                                    <RadioButton n1:textSize="12.0sp" n1:textColor="#ffc0c0c0" n1:gravity="center" n1:id="@id/r_vs2" n1:background="@drawable/overlay_radio" n1:paddingTop="4.0dip" n1:paddingBottom="4.0dip" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_marginRight="6.0dip" n1:button="@null" n1:text="ロイヤル" n1:layout_weight="1.0" />
+                                    <RadioButton n1:textSize="12.0sp" n1:textColor="#ffc0c0c0" n1:gravity="center" n1:id="@id/r_vs3" n1:background="@drawable/overlay_radio" n1:paddingTop="4.0dip" n1:paddingBottom="4.0dip" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_marginRight="6.0dip" n1:button="@null" n1:text="ドラゴン" n1:layout_weight="1.0" />
+                                    <RadioButton n1:textSize="12.0sp" n1:textColor="#ffc0c0c0" n1:gravity="center" n1:id="@id/r_vs4" n1:background="@drawable/overlay_radio" n1:paddingTop="4.0dip" n1:paddingBottom="4.0dip" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_marginRight="6.0dip" n1:button="@null" n1:text="ネクロ" n1:layout_weight="1.0" />
+                                    <RadioButton n1:textSize="12.0sp" n1:textColor="#ffc0c0c0" n1:gravity="center" n1:id="@id/r_vs5" n1:background="@drawable/overlay_radio" n1:paddingTop="4.0dip" n1:paddingBottom="4.0dip" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_marginRight="6.0dip" n1:button="@null" n1:text="ウィッチ" n1:layout_weight="1.0" />
+                                    <RadioButton n1:textSize="12.0sp" n1:textColor="#ffc0c0c0" n1:gravity="center" n1:id="@id/r_vs6" n1:background="@drawable/overlay_radio" n1:paddingTop="4.0dip" n1:paddingBottom="4.0dip" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_marginRight="6.0dip" n1:button="@null" n1:text="ヴァンパイア" n1:layout_weight="1.0" />
+                                    <RadioButton n1:textSize="12.0sp" n1:textColor="#ffc0c0c0" n1:gravity="center" n1:id="@id/r_vs7" n1:background="@drawable/overlay_radio" n1:paddingTop="4.0dip" n1:paddingBottom="4.0dip" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:button="@null" n1:text="ビショップ" n1:layout_weight="1.0" />
+                                    <RadioButton n1:textSize="12.0sp" n1:textColor="#ffc0c0c0" n1:gravity="center" n1:id="@id/r_vs8" n1:background="@drawable/overlay_radio" n1:paddingTop="4.0dip" n1:paddingBottom="4.0dip" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:button="@null" n1:text="ネメシス" n1:layout_weight="1.0" />
+                                </RadioGroup>
+                                <Spinner n1:textColor="#ffc0c0c0" n1:id="@id/spinner_vsdeck" n1:background="@drawable/overlay_spinner" n1:layout_width="300.0dip" n1:layout_height="26.0dip" n1:layout_marginLeft="6.0dip" />
+                            </LinearLayout>
+                            <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="8.0dip">
+                                <LinearLayout n1:orientation="horizontal" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+                                    <RadioGroup n1:orientation="horizontal" n1:id="@id/radio_order" n1:paddingLeft="6.0dip" n1:paddingRight="6.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                                        <RadioButton n1:textSize="12.0sp" n1:textColor="#ffc0c0c0" n1:gravity="center" n1:background="@drawable/overlay_radio" n1:paddingTop="4.0dip" n1:paddingBottom="4.0dip" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginRight="6.0dip" n1:button="@null" n1:text="先攻" n1:layout_weight="1.0" />
+                                        <RadioButton n1:textSize="12.0sp" n1:textColor="#ffc0c0c0" n1:gravity="center" n1:background="@drawable/overlay_radio" n1:paddingTop="4.0dip" n1:paddingBottom="4.0dip" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:button="@null" n1:text="後攻" n1:layout_weight="1.0" />
+                                    </RadioGroup>
+                                </LinearLayout>
+                                <LinearLayout n1:gravity="left" n1:orientation="horizontal" n1:paddingLeft="10.0dip" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+                                    <TextView n1:textSize="10.0sp" n1:textStyle="bold" n1:textColor="@color/white" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="6.0dip" n1:layout_marginTop="-2.0dip" n1:layout_marginRight="6.0dip" n1:text="対戦形式" />
+                                    <Spinner n1:textSize="10.0sp" n1:textColor="#ffc0c0c0" n1:id="@id/spinner_format" n1:background="@drawable/overlay_spinner" n1:layout_width="150.0dip" n1:layout_height="24.0dip" />
+                                </LinearLayout>
+                                <LinearLayout n1:gravity="left" n1:orientation="horizontal" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+                                    <TextView n1:textSize="10.0sp" n1:textStyle="bold" n1:textColor="@color/white" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="6.0dip" n1:layout_marginTop="-2.0dip" n1:layout_marginRight="6.0dip" n1:text="ターン数" />
+                                    <Spinner n1:textSize="10.0sp" n1:textColor="#ffc0c0c0" n1:id="@id/spinner_turn" n1:background="@drawable/overlay_spinner" n1:layout_width="80.0dip" n1:layout_height="24.0dip" />
+                                </LinearLayout>
+                                <LinearLayout n1:gravity="right" n1:orientation="horizontal" n1:layout_width="60.0dip" n1:layout_height="wrap_content" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </ScrollView>
+                    <TextView n1:textColor="#ffffff33" n1:gravity="center" n1:orientation="vertical" n1:id="@id/landscape_alert" n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:text="常駐記録は横画面でお使い下さい。" n1:layout_weight="1.0" />
+                    <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="13.0dip" n1:layout_marginRight="13.0dip" n1:layout_marginBottom="10.0dip">
+                        <TextView n1:textSize="12.0sp" n1:textColor="#ffffff55" n1:id="@id/alert_message" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="14.0dip" n1:layout_marginBottom="6.0dip" />
+                        <LinearLayout n1:gravity="center_horizontal" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="36.0dip">
+                            <LinearLayout n1:orientation="horizontal" n1:id="@id/result_switch" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+                                <Button n1:textColor="#ffffffff" n1:gravity="center" n1:id="@id/commit_win_button" n1:background="@drawable/overlay_footer" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:text="勝利で記録" n1:layout_weight="1.0" />
+                                <Button n1:textColor="#ffffffff" n1:gravity="center" n1:id="@id/commit_lose_button" n1:background="@drawable/overlay_footer" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_marginLeft="10.0dip" n1:text="敗北で記録" n1:layout_weight="1.0" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="29.0dip">
+                    <View n1:background="#ff393939" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+                    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                        <Button n1:textSize="13.0sp" n1:textColor="#ffffffff" n1:gravity="center" n1:id="@id/global_button_record" n1:background="@drawable/button_overlay_global" n1:layout_width="120.0dip" n1:layout_height="fill_parent" n1:text="戦績記録" n1:layout_alignParentLeft="true" />
+                        <View n1:id="@id/global_separate_3" n1:background="#ff393939" n1:layout_width="1.0dip" n1:layout_height="fill_parent" n1:layout_toRightOf="@id/global_button_record" />
+                        <Button n1:textSize="13.0sp" n1:textColor="#ffffffff" n1:gravity="center" n1:id="@id/global_button_close" n1:background="@drawable/button_overlay_global" n1:layout_width="100.0dip" n1:layout_height="fill_parent" n1:text="閉じる" n1:layout_alignParentRight="true" />
+                        <View n1:id="@id/global_separate_1" n1:background="#ff393939" n1:layout_width="1.0dip" n1:layout_height="fill_parent" n1:layout_toLeftOf="@id/global_button_close" />
+                        <Button n1:textSize="13.0sp" n1:textColor="#ffffffff" n1:gravity="center" n1:id="@id/global_button_exit" n1:background="@drawable/button_overlay_global" n1:layout_width="100.0dip" n1:layout_height="fill_parent" n1:text="常駐終了" n1:layout_toLeftOf="@id/global_separate_1" />
+                        <View n1:id="@id/global_separate_2" n1:background="#ff393939" n1:layout_width="1.0dip" n1:layout_height="fill_parent" n1:layout_toLeftOf="@id/global_button_exit" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

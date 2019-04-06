@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/blank_wrap" n1:padding="5.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:id="@id/deckListViewWrap" n1:background="#fff9bf3b" n1:padding="4.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <ListView n1:id="@id/deckListView" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="170.0px" />
+    </LinearLayout>
+    <Button n1:textSize="10.0sp" n1:textColor="@color/white" n1:gravity="center" n1:id="@id/list_extend" n1:background="#fff9bf3b" n1:padding="0.0dip" n1:layout_width="fill_parent" n1:layout_height="12.0dip" n1:layout_marginBottom="6.0dip" n1:text="▼" />
+    <ScrollView n1:id="@id/ScrollView" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:fillViewport="true">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <LinearLayout n1:orientation="vertical" n1:id="@id/layout_label" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="6.0dip">
+                <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:background="@color/button_mydeck_label_bg_2" n1:padding="2.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                        <TextView n1:textSize="12.0sp" n1:textStyle="bold" n1:textColor="@color/button_mydeck_label_bg_2" n1:paddingLeft="4.0dip" n1:paddingTop="2.0dip" n1:paddingBottom="0.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="4.0dip" n1:text="デッキ調整メモで、さらに期間を絞り込み" />
+                        <Spinner n1:id="@id/spinner_label" n1:background="@drawable/spinner_white_drawable" n1:layout_width="fill_parent" n1:layout_height="24.0dip" n1:layout_marginLeft="4.0dip" n1:layout_marginRight="4.0dip" n1:layout_marginBottom="2.0dip" />
+                        <LinearLayout n1:orientation="horizontal" n1:id="@id/prieod_label" n1:paddingLeft="4.0dip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="4.0dip">
+                            <TextView n1:textSize="12.0sp" n1:textStyle="bold" n1:textColor="@color/button_mydeck_label_bg_2" n1:id="@id/prieod_label_head" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="4.0dip" n1:text="" />
+                            <TextView n1:textSize="12.0sp" n1:textStyle="bold" n1:textColor="@color/button_mydeck_label_bg_2" n1:id="@id/prieod_label_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout n1:orientation="vertical" n1:id="@id/layout_analyze" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:background="@color/white" n1:paddingBottom="12.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="10.0dip">
+                    <TextView n1:textStyle="bold" n1:textColor="@color/white" n1:background="#ff303030" n1:paddingLeft="8.0dip" n1:paddingTop="6.0dip" n1:paddingBottom="6.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="8.0dip" n1:text="選択デッキの 勝率の推移" />
+                    <com.github.mikephil.charting.charts.LineChart n1:layout_gravity="top" n1:id="@id/line_chart" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="200.0dip" />
+                    <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                        <LinearLayout n1:orientation="vertical" n1:background="#ff4183d7" n1:paddingLeft="1.0dip" n1:paddingRight="1.0dip" n1:paddingBottom="1.0dip" n1:layout_width="100.0dip" n1:layout_height="60.0dip" n1:layout_marginRight="12.0dip">
+                            <TextView n1:textSize="12.0sp" n1:textColor="@color/white" n1:gravity="center" n1:layout_width="fill_parent" n1:layout_height="20.0dip" n1:text="デッキの勝率" />
+                            <TextView n1:textSize="16.0sp" n1:textColor="#ff4183d7" n1:gravity="center" n1:id="@id/analyze_text_per" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="0%" n1:layout_weight="1.0" />
+                        </LinearLayout>
+                        <LinearLayout n1:orientation="vertical" n1:background="#ff4183d7" n1:paddingLeft="1.0dip" n1:paddingRight="1.0dip" n1:paddingBottom="1.0dip" n1:layout_width="100.0dip" n1:layout_height="60.0dip" n1:layout_marginRight="12.0dip">
+                            <TextView n1:textSize="12.0sp" n1:textColor="@color/white" n1:gravity="center" n1:layout_width="fill_parent" n1:layout_height="20.0dip" n1:text="対戦数の合計" />
+                            <TextView n1:textSize="16.0sp" n1:textColor="#ff4183d7" n1:gravity="center" n1:id="@id/analyze_text_sum" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="0回" n1:layout_weight="1.0" />
+                        </LinearLayout>
+                        <LinearLayout n1:orientation="vertical" n1:background="#ff4183d7" n1:paddingLeft="1.0dip" n1:paddingRight="1.0dip" n1:paddingBottom="1.0dip" n1:layout_width="100.0dip" n1:layout_height="60.0dip">
+                            <TextView n1:textSize="12.0sp" n1:textColor="@color/white" n1:gravity="center" n1:layout_width="fill_parent" n1:layout_height="20.0dip" n1:text="勝利数の合計" />
+                            <TextView n1:textSize="16.0sp" n1:textColor="#ff4183d7" n1:gravity="center" n1:id="@id/analyze_text_win" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="0回" n1:layout_weight="1.0" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="10.0dip">
+                    <TextView n1:textStyle="bold" n1:textColor="@color/white" n1:background="#ff303030" n1:paddingLeft="8.0dip" n1:paddingTop="6.0dip" n1:paddingBottom="6.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="選択デッキの 対戦リーダー＆デッキ解析" />
+                    <TableLayout n1:id="@id/tableLayout3" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+                    <TableLayout n1:id="@id/tableLayout4" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+                    <TableLayout n1:id="@id/tableLayout5" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+                </LinearLayout>
+                <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/deck_pub_layout" n1:background="@color/white" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="10.0dip">
+                    <TextView n1:textStyle="bold" n1:textColor="@color/white" n1:background="#ff303030" n1:paddingLeft="8.0dip" n1:paddingTop="6.0dip" n1:paddingBottom="6.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="このデッキを公開する" />
+                    <Button n1:textSize="15.0sp" n1:textColor="@color/white" n1:gravity="center" n1:id="@id/deck_pub_button" n1:background="@drawable/button_deck_analyze_pub" n1:layout_width="fill_parent" n1:layout_height="40.0dip" n1:layout_margin="8.0dip" n1:text=" デッキを公開して、友達に教える" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <TextView n1:textSize="15.0sp" n1:textColor="#ff303030" n1:id="@id/non_message" n1:padding="6.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="デッキ別の戦績解析を出力します。\n上のリストからデッキを選択して下さい。\n記録したのにデータが表示されないという方は、右上の歯車アイコンで「解析の期間」が設定できますので確認してみて下さい。\nまた、解析対象は「ランクマッチ」のみとなっています。" n1:lineSpacingExtra="5.0sp" />
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="#ff000000" n1:layout_width="wrap_content" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:layout_width="280.0dip" n1:layout_height="wrap_content">
+        <TextView n1:textColor="@color/pop_window_vivid_color" n1:paddingLeft="12.0dip" n1:paddingTop="18.0dip" n1:paddingRight="12.0dip" n1:paddingBottom="18.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="解析の期間" />
+        <View n1:background="@color/pop_window_vivid_color" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+        <RadioGroup n1:id="@id/radio_group" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <RadioButton n1:textSize="14.0sp" n1:textColor="@color/pop_window_text_color" n1:id="@id/radio_default" n1:background="@drawable/radio_flat_button" n1:paddingLeft="16.0dip" n1:paddingTop="16.0dip" n1:paddingBottom="16.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:text="新パック 実装以降" />
+            <View n1:background="@color/divider_dark" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+            <RadioButton n1:textSize="14.0sp" n1:textColor="@color/pop_window_text_color" n1:id="@id/radio_all" n1:background="@drawable/radio_flat_button" n1:paddingLeft="16.0dip" n1:paddingTop="16.0dip" n1:paddingBottom="16.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:text="全期間" />
+            <View n1:background="@color/divider_dark" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+            <RadioButton n1:textSize="14.0sp" n1:textColor="@color/pop_window_text_color" n1:id="@id/radio_custom" n1:background="@drawable/radio_flat_button" n1:paddingLeft="16.0dip" n1:paddingTop="16.0dip" n1:paddingBottom="16.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:text="指定した期間" />
+            <LinearLayout n1:orientation="vertical" n1:id="@id/layout_custom_period" n1:paddingTop="8.0dip" n1:paddingBottom="8.0dip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:padding="8.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:textSize="12.0sp" n1:textColor="@color/pop_window_text_color" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="6.0dip" n1:text="ここから" />
+                    <TextView n1:textColor="#ffe0e0e0" n1:id="@id/picker1" n1:background="#ff303030" n1:paddingLeft="8.0sp" n1:layout_width="100.0dip" n1:layout_height="20.0dip" n1:layout_marginRight="8.0dip" n1:text="..." />
+                    <TextView n1:textColor="#ffe0e0e0" n1:id="@id/picker2" n1:background="#ff303030" n1:paddingLeft="4.0sp" n1:layout_width="60.0dip" n1:layout_height="20.0dip" n1:text="..." />
+                </LinearLayout>
+                <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:padding="8.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:textSize="12.0sp" n1:textColor="@color/pop_window_text_color" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="6.0dip" n1:text="ここまで" />
+                    <TextView n1:textColor="#ffe0e0e0" n1:id="@id/picker3" n1:background="#ff303030" n1:paddingLeft="8.0sp" n1:layout_width="100.0dip" n1:layout_height="20.0dip" n1:layout_marginRight="8.0dip" n1:text="..." />
+                    <TextView n1:textColor="#ffe0e0e0" n1:id="@id/picker4" n1:background="#ff303030" n1:paddingLeft="4.0sp" n1:layout_width="60.0dip" n1:layout_height="20.0dip" n1:text="..." />
+                </LinearLayout>
+            </LinearLayout>
+            <View n1:background="@color/divider_dark" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+            <Button n1:textSize="14.0sp" n1:textColor="@color/white" n1:layout_gravity="center" n1:id="@id/period_commit" n1:background="#00000000" n1:paddingTop="16.0dip" n1:paddingBottom="16.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="この期間で解析を絞り込む" />
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

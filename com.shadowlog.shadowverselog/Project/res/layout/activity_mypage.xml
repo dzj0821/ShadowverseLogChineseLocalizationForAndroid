@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout n1:id="@id/drawer_layout" n1:fitsSystemWindows="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:id="@id/layout_mypage" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+            <android.support.v7.widget.Toolbar n1:theme="@style/ToolbarTheme" n1:id="@id/toolBar" n1:background="@color/toolbar_bg" n1:layout_width="fill_parent" n1:layout_height="40.0dip" n2:contentInsetStartWithNavigation="0.0dip" n2:popupTheme="@style/Theme.AppCompat.Light" n2:titleTextAppearance="@style/ToolbarTextAppearance" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            <com.ogaclejapan.smarttablayout.SmartTabLayout n1:id="@id/tabLayout" n1:layout_width="fill_parent" n1:layout_height="32.0dip" n3:stl_clickable="true" n3:stl_defaultTabBackground="?selectableItemBackground" n3:stl_defaultTabTextAllCaps="true" n3:stl_defaultTabTextColor="#e0000000" n3:stl_defaultTabTextHorizontalPadding="16.0dip" n3:stl_defaultTabTextMinWidth="0.0dip" n3:stl_defaultTabTextSize="12.0sp" n3:stl_distributeEvenly="false" n3:stl_dividerColor="#4d000000" n3:stl_dividerThickness="1.0dip" n3:stl_drawDecorationAfterTab="false" n3:stl_indicatorAlwaysInCenter="false" n3:stl_indicatorColor="#ff019875" n3:stl_indicatorCornerRadius="2.0dip" n3:stl_indicatorGravity="bottom" n3:stl_indicatorInFront="false" n3:stl_indicatorInterpolation="smart" n3:stl_indicatorThickness="4.0dip" n3:stl_indicatorWidth="auto" n3:stl_indicatorWithoutPadding="false" n3:stl_overlineColor="#4d000000" n3:stl_overlineThickness="0.0dip" n3:stl_titleOffset="24.0dip" n3:stl_underlineColor="#4d000000" n3:stl_underlineThickness="1.0dip" xmlns:n3="http://schemas.android.com/apk/res-auto" />
+            <android.support.v4.view.ViewPager n1:id="@id/viewpager" n1:background="#ffe0e0e0" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_below="@id/viewpager" />
+            <LinearLayout n1:orientation="vertical" n1:id="@id/layout_child" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout n1:gravity="bottom|center" n1:orientation="horizontal" n1:id="@id/bottom_button_group" n1:background="#ff101010" n1:layout_width="fill_parent" n1:layout_height="36.0dip">
+            <Button n1:id="@id/record_add_button" n1:background="@drawable/button_footer" n1:layout_width="0.0dip" n1:layout_height="32.0dip" n1:layout_marginLeft="4.0dip" n1:layout_marginTop="0.0dip" n1:layout_marginRight="2.0dip" n1:text="新しく戦績を記録" n1:layout_weight="1.0" style="@style/button_text" />
+            <Button n1:id="@id/record_overlay_button" n1:background="@drawable/button_footer2" n1:layout_width="0.0dip" n1:layout_height="32.0dip" n1:layout_marginLeft="2.0dip" n1:layout_marginTop="0.0dip" n1:layout_marginRight="4.0dip" n1:text="プレイしながら記録" n1:layout_weight="1.0" style="@style/button_text" />
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.design.widget.NavigationView n1:layout_gravity="start" n1:id="@id/navigation_view" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n4:menu="@menu/drawer" xmlns:n4="http://schemas.android.com/apk/res-auto" />
+</android.support.v4.widget.DrawerLayout>

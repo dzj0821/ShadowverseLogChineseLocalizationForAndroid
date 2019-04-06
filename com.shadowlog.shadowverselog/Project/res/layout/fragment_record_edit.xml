@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/blank_wrap" n1:padding="12.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:gravity="top" n1:orientation="vertical" n1:background="#ffffffff" n1:paddingLeft="4.0sp" n1:paddingTop="8.0sp" n1:paddingRight="4.0sp" n1:paddingBottom="8.0sp" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <TextView n1:textSize="12.0sp" n1:textStyle="bold" n1:textColor="#ffffffff" n1:gravity="center" n1:id="@id/edit_title" n1:background="@drawable/child_fragment_title" n1:paddingTop="6.0dip" n1:paddingBottom="6.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="2.0dip" n1:layout_marginRight="2.0dip" n1:layout_marginBottom="8.0dip" n1:text="戦績を新しく記録する" />
+            <TextView n1:textColor="#ff303030" n1:id="@id/sub_my" n1:background="@drawable/child_fragment_subject" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text=" あなたのリーダー＆デッキ" style="@style/ChildFragmentSubject" />
+            <RadioGroup n1:orientation="horizontal" n1:id="@id/radiogroup_myleader" n1:paddingLeft="2.0dip" n1:paddingTop="2.0dip" n1:paddingRight="2.0dip" n1:paddingBottom="2.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <com.example.hide.newproject.lib.SquareRadioButton n1:id="@id/rg_myleader_1" n1:background="@drawable/leader_button_select_1" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:layout_weight="1.0" />
+                <com.example.hide.newproject.lib.SquareRadioButton n1:id="@id/rg_myleader_2" n1:background="@drawable/leader_button_select_2" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:layout_weight="1.0" />
+                <com.example.hide.newproject.lib.SquareRadioButton n1:id="@id/rg_myleader_3" n1:background="@drawable/leader_button_select_3" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:layout_weight="1.0" />
+                <com.example.hide.newproject.lib.SquareRadioButton n1:id="@id/rg_myleader_4" n1:background="@drawable/leader_button_select_4" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:layout_weight="1.0" />
+                <com.example.hide.newproject.lib.SquareRadioButton n1:id="@id/rg_myleader_5" n1:background="@drawable/leader_button_select_5" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:layout_weight="1.0" />
+                <com.example.hide.newproject.lib.SquareRadioButton n1:id="@id/rg_myleader_6" n1:background="@drawable/leader_button_select_6" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:layout_weight="1.0" />
+                <com.example.hide.newproject.lib.SquareRadioButton n1:id="@id/rg_myleader_7" n1:background="@drawable/leader_button_select_7" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:layout_weight="1.0" />
+                <com.example.hide.newproject.lib.SquareRadioButton n1:id="@id/rg_myleader_8" n1:background="@drawable/leader_button_select_8" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:layout_weight="1.0" />
+            </RadioGroup>
+            <Spinner n1:id="@id/spinner_mydeck" n1:background="@drawable/spinner_white_drawable" n1:layout_width="fill_parent" n1:layout_height="27.0dip" n1:layout_marginLeft="4.0dip" n1:layout_marginRight="4.0dip" />
+            <View n1:layout_width="wrap_content" n1:layout_height="12.0dip" />
+            <TextView n1:textColor="#ff303030" n1:id="@id/sub_vs" n1:background="@drawable/child_fragment_subject" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text=" 対戦相手のリーダー＆デッキ" style="@style/ChildFragmentSubject" />
+            <RadioGroup n1:orientation="horizontal" n1:id="@id/radiogroup_vsleader" n1:paddingLeft="2.0dip" n1:paddingTop="2.0dip" n1:paddingRight="2.0dip" n1:paddingBottom="2.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <com.example.hide.newproject.lib.SquareRadioButton n1:id="@id/rg_vsleader_1" n1:background="@drawable/leader_button_select_1" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:layout_weight="1.0" />
+                <com.example.hide.newproject.lib.SquareRadioButton n1:id="@id/rg_vsleader_2" n1:background="@drawable/leader_button_select_2" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:layout_weight="1.0" />
+                <com.example.hide.newproject.lib.SquareRadioButton n1:id="@id/rg_vsleader_3" n1:background="@drawable/leader_button_select_3" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:layout_weight="1.0" />
+                <com.example.hide.newproject.lib.SquareRadioButton n1:id="@id/rg_vsleader_4" n1:background="@drawable/leader_button_select_4" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:layout_weight="1.0" />
+                <com.example.hide.newproject.lib.SquareRadioButton n1:id="@id/rg_vsleader_5" n1:background="@drawable/leader_button_select_5" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:layout_weight="1.0" />
+                <com.example.hide.newproject.lib.SquareRadioButton n1:id="@id/rg_vsleader_6" n1:background="@drawable/leader_button_select_6" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:layout_weight="1.0" />
+                <com.example.hide.newproject.lib.SquareRadioButton n1:id="@id/rg_vsleader_7" n1:background="@drawable/leader_button_select_7" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:layout_weight="1.0" />
+                <com.example.hide.newproject.lib.SquareRadioButton n1:id="@id/rg_vsleader_8" n1:background="@drawable/leader_button_select_8" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:layout_weight="1.0" />
+            </RadioGroup>
+            <Spinner n1:id="@id/spinner_vsdeck" n1:background="@drawable/spinner_white_drawable" n1:layout_width="fill_parent" n1:layout_height="27.0dip" n1:layout_marginLeft="4.0dip" n1:layout_marginRight="4.0dip" />
+            <View n1:layout_width="wrap_content" n1:layout_height="12.0dip" />
+            <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <LinearLayout n1:orientation="vertical" n1:layout_width="100.0dip" n1:layout_height="wrap_content" n1:layout_marginRight="2.0dip">
+                    <TextView n1:textColor="#ff303030" n1:id="@id/sub_order" n1:background="@drawable/child_fragment_subject" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginRight="0.0dip" n1:text=" 手順" style="@style/ChildFragmentSubject" />
+                    <RadioGroup n1:orientation="horizontal" n1:id="@id/radiogroup_order" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="2.0dip" n1:layout_marginTop="2.0dip">
+                        <RadioButton n1:id="@id/rg_order_1" n1:background="@drawable/order_button_select_1" n1:layout_width="45.0dip" n1:layout_height="60.0dip" n1:button="@null" />
+                        <RadioButton n1:id="@id/rg_order_2" n1:background="@drawable/order_button_select_2" n1:layout_width="45.0dip" n1:layout_height="60.0dip" n1:button="@null" />
+                    </RadioGroup>
+                </LinearLayout>
+                <LinearLayout n1:orientation="vertical" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+                    <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="8.0dip">
+                        <TextView n1:textColor="#ff303030" n1:id="@id/sub_format" n1:background="@drawable/child_fragment_subject" n1:layout_width="70.0dip" n1:layout_height="wrap_content" n1:text="対戦形式　" style="@style/ChildFragmentSubject" />
+                        <Spinner n1:id="@id/spinner_format" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginTop="1.0dip" n1:layout_weight="1.0" />
+                    </LinearLayout>
+                    <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                        <TextView n1:textColor="#ff303030" n1:id="@id/sub_turn" n1:background="@drawable/child_fragment_subject" n1:layout_width="70.0dip" n1:layout_height="wrap_content" n1:layout_marginTop="3.0dip" n1:text="ターン数　" style="@style/ChildFragmentSubject" />
+                        <Spinner n1:id="@id/spinner_turn" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginTop="4.0dip" n1:layout_weight="1.0" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View n1:layout_width="wrap_content" n1:layout_height="12.0dip" />
+            <TextView n1:textColor="#ff303030" n1:id="@id/sub_memo" n1:background="@drawable/child_fragment_subject" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="6.0dip" n1:text=" 対戦のメモ" style="@style/ChildFragmentSubject" />
+            <EditText n1:id="@id/editText" n1:background="@drawable/edit_text_back" n1:padding="4.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="4.0dip" n1:layout_marginRight="4.0dip" n1:maxLength="200" />
+            <View n1:layout_width="wrap_content" n1:layout_height="4.0dip" />
+            <TextView n1:textSize="14.0sp" n1:textColor="#ffff3333" n1:id="@id/alert_message" n1:paddingLeft="4.0dip" n1:paddingRight="4.0dip" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="16.0dip" n1:layout_marginBottom="4.0dip" n1:text="" />
+            <LinearLayout n1:orientation="horizontal" n1:paddingLeft="4.0dip" n1:paddingTop="4.0dip" n1:paddingRight="4.0dip" n1:layout_width="fill_parent" n1:layout_height="40.0dip">
+                <Button n1:textSize="16.0sp" n1:textStyle="bold" n1:textColor="#ffffffff" n1:id="@id/commit_win_button" n1:background="@drawable/button_win" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginRight="6.0dip" n1:text="勝利" n1:layout_weight="1.0" />
+                <Button n1:textSize="16.0sp" n1:textStyle="bold" n1:textColor="#ffffffff" n1:id="@id/commit_lose_button" n1:background="@drawable/button_lose" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:text="敗北" n1:layout_weight="1.0" />
+            </LinearLayout>
+            <Button n1:textSize="12.0sp" n1:textStyle="bold" n1:textColor="#ffe00000" n1:gravity="center" n1:layout_gravity="center_horizontal" n1:id="@id/delete_button" n1:background="@null" n1:padding="4.0dip" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="28.0dip" n1:layout_marginLeft="4.0dip" n1:layout_marginTop="8.0dip" n1:layout_marginRight="4.0dip" n1:text=" この戦績を削除する" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+    <item n1:title="ユーザー"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <menu n1:checkableBehavior="single">
+            <item n1:icon="@drawable/user_bk" n1:id="@id/menu_profile_edit" n1:title="プロフィール編集" />
+        </menu>
+    </item>
+    <item n2:title="戦績管理"
+      xmlns:n2="http://schemas.android.com/apk/res/android">
+        <menu n2:checkableBehavior="single">
+            <item n2:id="@id/menu_record" n2:title="あなたの戦績一覧" />
+            <item n2:id="@id/menu_my_analyze" n2:title="あなたの勝率解析" />
+            <item n2:id="@id/menu_mydeck" n2:title="マイデッキ管理" />
+            <item n2:id="@id/menu_deck_analyze" n2:title="デッキ別の勝率解析" />
+            <item n2:id="@id/menu_record_2pick" n2:title="2PICKの戦績一覧" />
+            <item n2:id="@id/menu_metareport" n2:title="対戦解析ログ" />
+        </menu>
+    </item>
+    <item n3:title="応援宜しくお願いします"
+      xmlns:n3="http://schemas.android.com/apk/res/android">
+        <menu n3:checkableBehavior="single">
+            <item n3:icon="@drawable/twitter_bk" n3:id="@id/menu_put_tweet" n3:title="友達にアプリを教える" />
+            <item n3:icon="@drawable/pencil_bk" n3:id="@id/menu_put_review" n3:title="アプリのレビューを書く" />
+        </menu>
+    </item>
+    <item n4:title="管理"
+      xmlns:n4="http://schemas.android.com/apk/res/android">
+        <menu n4:checkableBehavior="single">
+            <item n4:icon="@drawable/reload_bk" n4:id="@id/menu_sync" n4:title="データ同期" />
+            <item n4:icon="@drawable/info_bk" n4:id="@id/menu_contact" n4:title="お問合せ" />
+            <item n4:icon="@drawable/delete_bk" n4:id="@id/menu_logout" n4:title="ログアウト" />
+        </menu>
+    </item>
+</menu>

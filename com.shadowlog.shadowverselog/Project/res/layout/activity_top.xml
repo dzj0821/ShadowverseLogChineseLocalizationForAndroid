@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:background="#ff000000" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/layout_top" n1:background="#ff000000" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <ImageView n1:layout_gravity="center_horizontal" n1:layout_width="320.0dip" n1:layout_height="200.0dip" n1:src="@drawable/magic_book" n1:layout_alignParentBottom="true" n1:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <TextView n1:textSize="20.0sp" n1:textColor="#ffffffff" n1:gravity="center_horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="12.0dip" n1:text="@string/app_name" />
+    <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:paddingLeft="20.0dip" n1:paddingRight="20.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="70.0dip">
+        <LinearLayout n1:orientation="vertical" n1:background="#cc000000" n1:padding="8.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="5.0dip">
+            <TextView n1:textSize="16.0sp" n1:textStyle="bold" n1:textColor="@color/white" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="8.0dip" n1:text="@string/top_activity_subject_online" />
+            <TextView n1:textSize="8.0sp" n1:textColor="@color/white" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="12.0dip" n1:text="@string/top_activity_text_online" n1:lineSpacingExtra="4.0sp" />
+            <Button n1:textSize="14.0sp" n1:id="@id/signup_button" n1:background="@drawable/button_top" n1:paddingLeft="12.0dip" n1:paddingRight="12.0dip" n1:layout_width="wrap_content" n1:layout_height="40.0dip" n1:layout_marginBottom="8.0dip" n1:text="@string/top_activity_button_signup" />
+            <Button n1:textSize="14.0sp" n1:id="@id/login_button" n1:background="@drawable/button_top" n1:paddingLeft="12.0dip" n1:paddingRight="12.0dip" n1:layout_width="wrap_content" n1:layout_height="40.0dip" n1:text="@string/top_activity_button_login" />
+        </LinearLayout>
+        <LinearLayout n1:orientation="vertical" n1:background="#cc000000" n1:padding="8.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:textSize="12.0sp" n1:textStyle="bold" n1:textColor="@color/white" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="8.0dip" n1:text="@string/top_activity_subject_offline" />
+            <TextView n1:textSize="8.0sp" n1:textColor="@color/white" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="12.0dip" n1:text="@string/top_activity_text_offline" n1:lineSpacingExtra="4.0sp" />
+            <Button n1:textSize="12.0sp" n1:id="@id/offline_button" n1:background="@drawable/button_top" n1:paddingLeft="8.0dip" n1:paddingRight="8.0dip" n1:layout_width="wrap_content" n1:layout_height="36.0dip" n1:text="@string/top_activity_button_offline" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

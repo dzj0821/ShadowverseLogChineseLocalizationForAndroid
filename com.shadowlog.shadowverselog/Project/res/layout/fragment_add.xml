@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/blank_wrap" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:gravity="top" n1:orientation="vertical" n1:background="#ffffffff" n1:paddingTop="4.0sp" n1:paddingBottom="4.0sp" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <TextView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="あなたのリーダー＆デッキ" style="@style/ChildFragmentSubject" />
+            <RadioGroup n1:orientation="horizontal" n1:id="@id/radiogroup_myleader" n1:paddingLeft="2.0dip" n1:paddingTop="2.0dip" n1:paddingRight="2.0dip" n1:paddingBottom="2.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <com.example.hide.newproject.lib.SquareRadioButton n1:id="@id/rg_myleader_1" n1:background="@drawable/leader_button_select_1" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:layout_weight="1.0" />
+                <com.example.hide.newproject.lib.SquareRadioButton n1:id="@id/rg_myleader_2" n1:background="@drawable/leader_button_select_2" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:layout_weight="1.0" />
+                <com.example.hide.newproject.lib.SquareRadioButton n1:id="@id/rg_myleader_3" n1:background="@drawable/leader_button_select_3" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:layout_weight="1.0" />
+                <com.example.hide.newproject.lib.SquareRadioButton n1:id="@id/rg_myleader_4" n1:background="@drawable/leader_button_select_4" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:layout_weight="1.0" />
+                <com.example.hide.newproject.lib.SquareRadioButton n1:id="@id/rg_myleader_5" n1:background="@drawable/leader_button_select_5" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:layout_weight="1.0" />
+                <com.example.hide.newproject.lib.SquareRadioButton n1:id="@id/rg_myleader_6" n1:background="@drawable/leader_button_select_6" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:layout_weight="1.0" />
+                <com.example.hide.newproject.lib.SquareRadioButton n1:id="@id/rg_myleader_7" n1:background="@drawable/leader_button_select_7" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:layout_weight="1.0" />
+                <com.example.hide.newproject.lib.SquareRadioButton n1:id="@id/rg_myleader_8" n1:background="@drawable/leader_button_select_8" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:layout_weight="1.0" />
+            </RadioGroup>
+            <Spinner n1:id="@id/spinner_mydeck" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="4.0dip" n1:layout_marginRight="4.0dip" />
+            <View n1:layout_width="wrap_content" n1:layout_height="4.0dip" />
+            <TextView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="対戦相手のリーダー＆デッキ" style="@style/ChildFragmentSubject" />
+            <RadioGroup n1:orientation="horizontal" n1:id="@id/radiogroup_vsleader" n1:paddingLeft="2.0dip" n1:paddingTop="2.0dip" n1:paddingRight="2.0dip" n1:paddingBottom="2.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <com.example.hide.newproject.lib.SquareRadioButton n1:id="@id/rg_vsleader_1" n1:background="@drawable/leader_button_select_1" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:layout_weight="1.0" />
+                <com.example.hide.newproject.lib.SquareRadioButton n1:id="@id/rg_vsleader_2" n1:background="@drawable/leader_button_select_2" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:layout_weight="1.0" />
+                <com.example.hide.newproject.lib.SquareRadioButton n1:id="@id/rg_vsleader_3" n1:background="@drawable/leader_button_select_3" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:layout_weight="1.0" />
+                <com.example.hide.newproject.lib.SquareRadioButton n1:id="@id/rg_vsleader_4" n1:background="@drawable/leader_button_select_4" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:layout_weight="1.0" />
+                <com.example.hide.newproject.lib.SquareRadioButton n1:id="@id/rg_vsleader_5" n1:background="@drawable/leader_button_select_5" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:layout_weight="1.0" />
+                <com.example.hide.newproject.lib.SquareRadioButton n1:id="@id/rg_vsleader_6" n1:background="@drawable/leader_button_select_6" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:layout_weight="1.0" />
+                <com.example.hide.newproject.lib.SquareRadioButton n1:id="@id/rg_vsleader_7" n1:background="@drawable/leader_button_select_7" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:button="@null" n1:layout_weight="1.0" />
+            </RadioGroup>
+            <Spinner n1:id="@id/spinner_vsdeck" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="4.0dip" n1:layout_marginRight="4.0dip" />
+            <View n1:layout_width="wrap_content" n1:layout_height="4.0dip" />
+            <TextView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="勝ち星" style="@style/ChildFragmentSubject" />
+            <LinearLayout n1:gravity="center_horizontal" n1:orientation="horizontal" n1:padding="6.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <Button n1:textSize="16.0sp" n1:textColor="#ffc0c0c0" n1:background="@null" n1:layout_width="18.0dip" n1:layout_height="18.0dip" n1:text="★" />
+                <RatingBar n1:theme="@style/Theme.AppCompat" n1:id="@id/ratingBar" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:numStars="5" n1:rating="0.0" n1:stepSize="1.0" n1:isIndicator="false" style="?android:ratingBarStyleIndicator" />
+                <View n1:layout_width="18.0dip" n1:layout_height="18.0dip" />
+            </LinearLayout>
+            <View n1:layout_width="wrap_content" n1:layout_height="4.0dip" />
+            <TextView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="テキスト入力" style="@style/ChildFragmentSubject" />
+            <EditText n1:id="@id/editText" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="4.0dip" n1:layout_marginRight="4.0dip" />
+            <View n1:layout_width="wrap_content" n1:layout_height="4.0dip" />
+            <TextView n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="テキストエリア" style="@style/ChildFragmentSubject" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

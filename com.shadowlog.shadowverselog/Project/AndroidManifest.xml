@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.shadowlog.shadowverselog">
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <permission android:name="com.shadowlog.shadowverselog.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.shadowlog.shadowverselog.permission.C2D_MESSAGE"/>
+    <application android:allowBackup="false" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.shadowlog.shadowverselog.MeasurementGAManager" android:supportsRtl="true" android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:label="@string/app_name" android:name="com.shadowlog.shadowverselog.MainActivity" android:screenOrientation="portrait" android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.shadowlog.shadowverselog.TopActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.shadowlog.shadowverselog.MyPageActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.shadowlog.shadowverselog.LoginActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.shadowlog.shadowverselog.LogoutActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.shadowlog.shadowverselog.SignupActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.shadowlog.shadowverselog.SyncActivity" android:screenOrientation="portrait"/>
+        <service android:name="com.shadowlog.shadowverselog.OverlayService" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:enabled="true" android:name="com.google.android.gms.measurement.AppMeasurementReceiver">
+            <intent-filter>
+                <action android:name="com.google.android.gms.measurement.UPLOAD"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.shadowlog.shadowverselog"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"/>
+        <service android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.shadowlog.shadowverselog.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+    </application>
+</manifest>

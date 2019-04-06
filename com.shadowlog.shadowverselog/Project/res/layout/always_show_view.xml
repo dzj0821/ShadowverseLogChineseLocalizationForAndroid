@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:id="@id/frameLayout1" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:orientation="vertical" n1:id="@id/mini_layout" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <Button n1:textSize="25.0sp" n1:id="@id/open_button" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="開く" />
+        </LinearLayout>
+        <LinearLayout n1:orientation="vertical" n1:id="@id/deploy_layout" n1:padding="20.0px" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <LinearLayout n1:orientation="vertical" n1:background="#ffe0e0e0" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <RadioGroup n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                        <RadioButton n1:background="@drawable/l_1_50_s" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="1.0" />
+                        <RadioButton n1:background="@drawable/l_1_50_s" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="2.0" />
+                        <RadioButton n1:background="@drawable/l_1_50_s" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="3.0" />
+                        <RadioButton n1:background="@drawable/l_1_50_s" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="4.0" />
+                        <RadioButton n1:background="@drawable/l_1_50_s" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="5.0" />
+                        <RadioButton n1:background="@drawable/l_1_50_s" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="6.0" />
+                        <RadioButton n1:background="@drawable/l_1_50_s" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_weight="7.0" />
+                    </RadioGroup>
+                </LinearLayout>
+                <Button n1:textSize="25.0sp" n1:id="@id/close_button" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="閉じる" />
+                <Button n1:textSize="25.0sp" n1:id="@id/destroy_button" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="常駐を終了" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/blank_wrap" n1:padding="12.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:background="@color/white" n1:paddingLeft="4.0sp" n1:paddingTop="6.0sp" n1:paddingRight="4.0sp" n1:paddingBottom="6.0sp" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:textSize="12.0sp" n1:textStyle="bold" n1:textColor="#ffffffff" n1:gravity="center" n1:id="@id/edit_title" n1:background="@color/button_mydeck_label_bg_1" n1:paddingTop="6.0dip" n1:paddingBottom="6.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="2.0dip" n1:layout_marginRight="2.0dip" n1:text="デッキ調整メモ" />
+    </LinearLayout>
+    <LinearLayout n1:orientation="vertical" n1:background="@color/white" n1:paddingLeft="4.0dip" n1:paddingTop="4.0dip" n1:paddingRight="4.0dip" n1:paddingBottom="4.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="1.0dip" n1:layout_marginBottom="1.0dip">
+        <Button n1:textSize="12.0sp" n1:gravity="center" n1:id="@id/add_mydeck_label" n1:background="@drawable/button_list_add" n1:layout_width="fill_parent" n1:layout_height="40.0dip" n1:text=" 新しいデッキ調整メモを追加する" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="top" n1:orientation="vertical" n1:padding="0.0sp" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <ListView n1:id="@id/listview" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+        <LinearLayout n1:orientation="vertical" n1:id="@id/howto" n1:padding="4.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:textSize="12.0sp" n1:textColor="#ff606060" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="マイデッキのカード調整 (数枚のカード差し替え) を行った際に『デッキ調整メモ』を作成しておくと、\n デッキ解析で ｢メモを張った日付/時間｣ から ｢次のメモを張るまで(次が無ければ現在まで)｣ の期間での抽出ができるようになります。\n[メモ例] バレッジ2 → ライオン1,シンシア1\n[メモ例] 高コストのカードを差し替え" n1:lineSpacingExtra="5.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

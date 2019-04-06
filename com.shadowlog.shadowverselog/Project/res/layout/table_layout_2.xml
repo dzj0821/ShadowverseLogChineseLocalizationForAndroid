@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout n1:background="@color/border" n1:paddingBottom="1.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:stretchColumns="0"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TableRow n1:id="@id/tableRow1" n1:background="@color/white" n1:paddingTop="8.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="1.0dip">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+            <TextView n1:textSize="10.0dip" n1:textColor="@color/base_text" n1:gravity="center" n1:id="@id/textView1" n1:paddingLeft="5.0dip" n1:paddingTop="2.0dip" n1:paddingRight="5.0dip" n1:paddingBottom="2.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/table_head_ord" />
+        </LinearLayout>
+        <TextView n1:textSize="10.0dip" n1:textColor="@color/base_blue" n1:gravity="center" n1:id="@id/textView3" n1:paddingLeft="6.0dip" n1:paddingTop="2.0dip" n1:paddingRight="6.0dip" n1:paddingBottom="2.0dip" n1:layout_width="59.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="3.0dip" n1:text="@string/table_head_sum" />
+        <TextView n1:textSize="10.0dip" n1:textColor="@color/base_pink" n1:gravity="center" n1:id="@id/textView4" n1:paddingLeft="6.0dip" n1:paddingTop="2.0dip" n1:paddingRight="6.0dip" n1:paddingBottom="2.0dip" n1:layout_width="59.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="3.0dip" n1:text="@string/table_head_win" />
+        <TextView n1:textSize="10.0dip" n1:textColor="@color/base_pink" n1:gravity="center" n1:id="@id/textView5" n1:paddingLeft="6.0dip" n1:paddingTop="2.0dip" n1:paddingRight="6.0dip" n1:paddingBottom="2.0dip" n1:layout_width="59.0dip" n1:layout_height="wrap_content" n1:layout_marginLeft="3.0dip" n1:text="@string/table_head_per" />
+    </TableRow>
+</TableLayout>
