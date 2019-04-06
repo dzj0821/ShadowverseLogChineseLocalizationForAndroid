@@ -35,15 +35,32 @@
 
 # virtual methods
 .method public onPageFinished(Landroid/webkit/WebView;Ljava/lang/String;)V
-    .locals 0
+    .locals 2
     .param p1, "view"    # Landroid/webkit/WebView;
     .param p2, "url"    # Ljava/lang/String;
 
     .prologue
-    .line 61
+    #hack start
+    sget-boolean v0, Lpers/dzj0821/shadowverselog/translate/Main;->webviewChanged:Z
+    if-eqz v0, :translate
+    const/4 v0, 0x0
+    sput-boolean v0, Lpers/dzj0821/shadowverselog/translate/Main;->webviewChanged:Z
+    goto :return
+    :translate
+    const/4 v0, 0x1
+    sput-boolean v0, Lpers/dzj0821/shadowverselog/translate/Main;->webviewChanged:Z
+    .line 87
+    
+    sget-object v0, Lpers/dzj0821/shadowverselog/translate/Main;->translateJS:Ljava/lang/String;
+    
+    invoke-virtual {p1, v0}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
+    #hack end
+    
+    :return
+    .line 91
     invoke-super {p0, p1, p2}, Landroid/webkit/WebViewClient;->onPageFinished(Landroid/webkit/WebView;Ljava/lang/String;)V
-
-    .line 62
+    
+    .line 92
     return-void
 .end method
 

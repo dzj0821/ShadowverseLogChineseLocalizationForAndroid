@@ -432,6 +432,10 @@
     invoke-interface {v0}, Landroid/database/Cursor;->close()V
 
     .line 125
+    invoke-virtual {v2}, Ljava/util/List;->toString()Ljava/lang/String;
+    move-result-object v1
+    const-string v0, "dzj0821"
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
     return-object v2
 
     .line 119

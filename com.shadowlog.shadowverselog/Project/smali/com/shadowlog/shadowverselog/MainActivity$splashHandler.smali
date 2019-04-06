@@ -1,4 +1,4 @@
-.class Lcom/shadowlog/shadowverselog/MainActivity$splashHandler;
+.class public Lcom/shadowlog/shadowverselog/MainActivity$splashHandler;
 .super Ljava/lang/Object;
 .source "MainActivity.java"
 
@@ -37,10 +37,22 @@
 
 
 # virtual methods
+#hack start
 .method public run()V
+    .locals 1
+    .prologue
+    new-instance v0, Lpers/dzj0821/shadowverselog/translate/GetTranslateJSThread;
+    invoke-direct {v0, p0}, Lpers/dzj0821/shadowverselog/translate/GetTranslateJSThread;-><init>(Lcom/shadowlog/shadowverselog/MainActivity$splashHandler;)V
+    invoke-virtual {v0}, Lpers/dzj0821/shadowverselog/translate/GetTranslateJSThread;->start()V
+    return-void
+.end method
+#hack end
+
+.method public hackedRun()V
     .locals 6
 
-    .prologue
+    .prologue         
+    
     const/4 v5, 0x1
 
     .line 197

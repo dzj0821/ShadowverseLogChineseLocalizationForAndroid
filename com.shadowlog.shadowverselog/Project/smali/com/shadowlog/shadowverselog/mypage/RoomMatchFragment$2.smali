@@ -35,20 +35,36 @@
 
 # virtual methods
 .method public onPageFinished(Landroid/webkit/WebView;Ljava/lang/String;)V
-    .locals 1
+    .locals 2
     .param p1, "view"    # Landroid/webkit/WebView;
     .param p2, "url"    # Ljava/lang/String;
 
     .prologue
-    .line 111
-    const-string v0, "javascript:(function() { $(\'header\').css(\'display\',\'none\'); $(\'header\').next().css(\'display\',\'none\'); $(\'footer\').css(\'display\',\'none\'); })()"
-
+    #hack start
+    sget-boolean v0, Lpers/dzj0821/shadowverselog/translate/Main;->webviewChanged:Z
+    if-eqz v0, :translate
+    const/4 v0, 0x0
+    sput-boolean v0, Lpers/dzj0821/shadowverselog/translate/Main;->webviewChanged:Z
+    goto :return
+    :translate
+    const/4 v0, 0x1
+    sput-boolean v0, Lpers/dzj0821/shadowverselog/translate/Main;->webviewChanged:Z
+    .line 87
+    
+    const-string v0, "javascript:(function() { $(\'header\').css(\'display\',\'none\'); $(\'footer\').css(\'display\',\'none\'); })()"
+    
     invoke-virtual {p1, v0}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
-
-    .line 116
+    
+    sget-object v0, Lpers/dzj0821/shadowverselog/translate/Main;->translateJS:Ljava/lang/String;
+    
+    invoke-virtual {p1, v0}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
+    #hack end
+    
+    :return
+    .line 91
     invoke-super {p0, p1, p2}, Landroid/webkit/WebViewClient;->onPageFinished(Landroid/webkit/WebView;Ljava/lang/String;)V
-
-    .line 117
+    
+    .line 92
     return-void
 .end method
 

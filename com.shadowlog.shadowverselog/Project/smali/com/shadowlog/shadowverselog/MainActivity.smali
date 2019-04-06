@@ -14,10 +14,8 @@
     }
 .end annotation
 
-
 # instance fields
 .field private decktype_update_version:Ljava/lang/Integer;
-
 
 # direct methods
 .method public constructor <init>()V
@@ -68,7 +66,6 @@
     .line 190
     return-void
 .end method
-
 
 # virtual methods
 .method public callbackMethod(ILjava/util/HashMap;)V
